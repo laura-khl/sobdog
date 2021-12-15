@@ -937,7 +937,7 @@ $(function()
         message: message
       };
       $.ajax({
-        url: "./includes/form_42718.php",
+        url: "./includes/form.php",
         type: "POST",
         data: formData,
         cache: false,
