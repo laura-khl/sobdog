@@ -964,7 +964,7 @@ $(function()
 				$.ajax({
 		        	url: processorFile,
 		    		type: "POST",
-		    		data: {name_42718: 'Laura Kong', email_42718: 'laura.kong@integritystl.com', message_42718: 'test'},
+		    		data: formData,
 		    		cache: false,
 		    		success: function(data) // Success
 		 			{
