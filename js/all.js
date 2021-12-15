@@ -961,6 +961,7 @@ $(function()
 				$.ajax({
 		        	url: "./includes/form_42718.php",
 		    		type: "POST",
+                    header: "Access-Control-Allow-Origin: *",
 		    		data: formData,
 		    		cache: false,
 		    		success: function(data) // Success
