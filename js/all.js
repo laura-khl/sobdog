@@ -938,7 +938,7 @@ $(function()
 				var processorFile = getProcessorPath($form);
 				var formData = {};
 
-				$form.find("input, textarea").each(function(e) // Loop over form objects build data object
+				$form.find("input, textarea, option:selected").each(function(e) // Loop over form objects build data object
 				{
 					var fieldData =  $(this).val();
 					var fieldID =  $(this).attr('id');
@@ -964,7 +964,7 @@ $(function()
 				$.ajax({
 		        	url: processorFile,
 		    		type: "POST",
-		    		data: formData,
+		    		data: {name_42718: 'Laura Kong', email_42718: 'laura.kong@integritystl.com', message_42718: 'test'},
 		    		cache: false,
 		    		success: function(data) // Success
 		 			{
