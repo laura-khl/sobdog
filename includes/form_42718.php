@@ -4,7 +4,7 @@
 		return false;
 	}
 
-	try {
+
         $name_42718 = $_POST['name_42718'];
         $email_42718 = $_POST['email_42718'];
         $message_42718 = $_POST['message_42718'];
@@ -23,8 +23,4 @@
 //        mail($to,$email_subject,$email_body,$headers); // Post message
         echo json_encode(array("message"=> "Send Successfully!", "email"=>$email_42718));
         return true;
-    } catch (Exception $e) {
-        $json = json_encode( $e );
-        file_put_contents( ABSPATH . '/connection_failure.json', $json);
-    }
 ?>
