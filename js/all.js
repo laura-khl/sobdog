@@ -959,11 +959,10 @@ $(function()
 					formData[fieldID] = fieldData;
 				});
 
-				console.log(formData);
 
 				$.ajax({
 		        	url: processorFile,
-		    		type: "POST",
+		    		type: "GET",
                     header: "Access-Control-Allow-Origin: *",
 		    		data: formData,
 		    		cache: false,
