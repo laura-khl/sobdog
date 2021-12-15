@@ -964,7 +964,9 @@ $(function()
 				$.ajax({
 		        	url: processorFile,
 		    		type: "POST",
-		    		data: formData,
+                    contentType : 'application/json; charset=utf-8',
+                    dataType : 'application/json',
+		    		data: JSON.stringify(formData),
 		    		success: function(data) // Success
 		 			{
 		 				if ($form.find('#form-feedback-alert').length == 0) // Add Alert
