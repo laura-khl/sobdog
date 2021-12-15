@@ -1,5 +1,8 @@
 <?php	
-
+	if (empty($_POST['name_42718']) && strlen($_POST['name_42718']) == 0 || empty($_POST['email_42718']) && strlen($_POST['email_42718']) == 0 || empty($_POST['message_42718']) && strlen($_POST['message_42718']) == 0)
+	{
+		return false;
+	}
 
 	try {
         $name_42718 = $_POST['name_42718'];
