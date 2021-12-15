@@ -964,7 +964,10 @@ $(function()
 				$.ajax({
 		        	url: processorFile,
 		    		type: "POST",
-		    		data: formData,
+		    		data: JSON.stringify(formData),
+                    dataType: 'json',
+                    contentType: false,
+                    processData: false,
 		    		cache: false,
 		    		success: function(data) // Success
 		 			{
