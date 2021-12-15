@@ -938,7 +938,7 @@ $(function()
 				var processorFile = getProcessorPath($form);
 				var formData = {};
 
-				$form.find("input, textarea, option:selected").each(function(e) // Loop over form objects build data object
+				$form.find("input, textarea").each(function(e) // Loop over form objects build data object
 				{
 					var fieldData =  $(this).val();
 					var fieldID =  $(this).attr('id');
