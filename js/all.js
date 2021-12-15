@@ -965,7 +965,7 @@ $(function()
                     header: "Access-Control-Allow-Origin: *",
 		    		data: formData,
 		    		cache: false,
-                  complete: function(data) // Success
+		    		success: function(data) // Success
 		 			{
 		 				if ($form.find('#form-feedback-alert').length == 0) // Add Alert
 		 				{
