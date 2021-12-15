@@ -999,12 +999,13 @@ $(function()
 							}	
 		 				}
 		 	   		},
-			   		error: function() // Fail
+			   		error: function(e) // Fail
 			   		{
 						if($('#form-alert').length == 0)
 						{
 							$form.append("<div id='form-alert' class='mt-2'><div class='alert alert-danger' role='alert'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('data-fail-msg')+"</strong></div></div>");
-						}	
+						}
+						console.log(e);
 			   		},
 		   		});
 			}
