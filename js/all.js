@@ -963,7 +963,7 @@ $(function()
 		        	url: processorFile,
 		    		type: "POST",
                     header: "Access-Control-Allow-Origin: *",
-		    		data: formData,
+		    		data: formData.serialize(),
 		    		cache: false,
 		    		success: function(data) // Success
 		 			{
