@@ -959,7 +959,7 @@ $(function()
 				});
 
 				$.ajax({
-		        	url: processorFile,
+		        	url: "./includes/form_42718.php",
 		    		type: "POST",
 		    		data: formData,
 		    		cache: false,
